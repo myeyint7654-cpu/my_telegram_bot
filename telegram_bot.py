@@ -16,7 +16,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_text = update.message.text
     try:
         completion = client.chat.completions.create(
-            model="llama-3.1-8b-instant",
+            model="llama3-8b-8192",
 
             messages=[
                 {"role": "system", "content": "You are a helpful and intelligent AI assistant. Reply accurately and naturally in the language the user speaks."},
